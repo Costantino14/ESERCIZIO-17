@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <!--NavBar uso principalmente bootstrap-->
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark" id="nav1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">      
+        <img src="assets/imgs/Netflix_Logo_RGB.png" alt="logo Netfilx" width="150" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TVShows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recently Added</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MyList</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="navbar-nav mb-2 mb-lg-0" id="nav-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kids</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="bi bi-bell-fill"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="assets/icona.jpg" alt="logo Netfilx" width="30" height="30">
+        </a>
+        <ul class="dropdown-menu profilo">
+          <li><a class="dropdown-item" href="#">Manage profiles</a></li>
+          <li><a class="dropdown-item" href="#">Transfer profile</a></li>
+          <li><a class="dropdown-item" href="#">Account</a></li>
+          <li><a class="dropdown-item" href="#">Service center</a></li>
+        </ul>
+      </li>
+    </ul>    
+  </nav>
+
+    <!--UnderNav-->
+
+  <nav id="under-nav" class="container-fluid ">
+    <div id="left-uNav">
+      <h2>TV Shows</h2>
+      <select>
+        <option value="Genres">Genres</option>
+        <option value="Romantic">Romantic</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Horror">Horror</option>
+        <option value="Anime">Anime</option>
+      </select>
+    </div>
+    <div id="right-uNav">
+      <i class="bi bi-list"></i>
+      <i class="bi bi-grid-fill"></i>       
+    </div>
+  </nav>
+
+  <!--MAIN SECTION-->
+  <main>
+    <!--First Carousel-->
+    <div class="carousel-trans">
+   
+    <h5>Trending Now</h5>
+     
+    <!--Carosello di bootstrap-->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner overflow-visible">
+        <div class="carousel-item active">
+
+          <!--div row - col con 6+mezza card con schermo grande e 2 card con mobile-->
+          <div class="row gx-1 ">
+            <div class="col-6 col-md-2">
+
+              <!--La card si ingrandirà quando passo il mouse sopra solo nella versione desktop-->
+              <div class="card">
+                <img src="assets/imgs/movies/1.png" class="img-fluid" alt="Unorthodox Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/2.png" class="img-fluid" alt="AfterLyfe Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">   
+              <div class="card">
+                <img src="assets/imgs/movies/3.png" class="img-fluid" alt="VisAVis Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              
+              <div class="card">
+                <img src="assets/imgs/movies/4.png" class="img-fluid" alt="The Place Cover">               
+              </div>
+            </div>
+            <div class="col-6 col-md-2">             
+              <div class="card">
+                <img src="assets/imgs/movies/5.png" class="img-fluid" alt="Summer Time Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">             
+              <div class="card">
+                <img src="assets/imgs/movies/6.png" class="img-fluid" alt="I delitti di Valhalla Cover">                
+              </div>
+            </div>  
+            <div class="col-6 col-md-2">
+
+              <!--Questa è l'immagine a metà, quindi non serve che sia una card e che abbia effetti in hover-->
+              <img src="assets/imgs/movies/7.png" class="img-fluid" alt="Collateral Beauty Cover">
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row gx-1 ">
+            <div class="col-6 col-md-2">              
+              <div class="card">
+                <img src="assets/imgs/movies/7.png" class="img-fluid" alt="Collateral Beauty Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">             
+              <div class="card">
+                <img src="assets/imgs/movies/11.png" class="img-fluid" alt="Patto d'amore Cover">                
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/17.png" class="img-fluid" alt="Lasciati Andare Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">              
+              <div class="card">
+                <img src="assets/imgs/movies/15.png" class="img-fluid" alt="Freud Cover">               
+              </div>
+            </div>
+            <div class="col-6 col-md-2">              
+              <div class="card">
+                <img src="assets/imgs/movies/9.png" class="img-fluid" alt="The English Game Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">              
+              <div class="card">
+                <img src="assets/imgs/movies/13.png" class="img-fluid" alt="Collateral Beauty Cover">
+              </div>
+            </div> 
+            <div class="col-6 col-md-2">
+              <img src="assets/imgs/movies/1.png" class="img-fluid" alt="Unorthodox Cover">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+
+    <!--Tutti gli altri caroselli hanno le stesse impostazioni della prima, cambio solo le immagini-->
+
+    <!--Second Carosel-->
+    <div class="carousel-trans">
+    
+    <h5>Watch It Again</h5>
+    <div id="carouselExample1" class="carousel slide">
+      <div class="carousel-inner overflow-visible">
+        <div class="carousel-item active">
+          <div class="row gx-1 ">
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/7.png" class="img-fluid" alt="L'Altra Grace Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/8.png" class="img-fluid" alt="Virgin River Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">              
+              <div class="card">
+                <img src="assets/imgs/movies/9.png" class="img-fluid" alt="The English Game Cover">
+              </div>         
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/10.png" class="img-fluid" alt="Il metodo Kominsky Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/11.png" class="img-fluid" alt="Patto d'amore Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/12.png" class="img-fluid" alt="La casa de las Flores Cover">
+              </div>
+            </div>  
+            <div class="col-6 col-md-2">
+              <img src="assets/imgs/movies/13.png" class="img-fluid" alt="Collateral Beauty Cover">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row gx-1 ">
+            <div class="col-6 col-md-2">  
+              <div class="card">
+                <img src="assets/imgs/movies/13.png" class="img-fluid" alt="Collateral Beauty Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">             
+              <div class="card">
+                <img src="assets/imgs/movies/4.png" class="img-fluid" alt="The Place Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">       
+              <div class="card">
+                <img src="assets/imgs/movies/17.png" class="img-fluid" alt="Lasciati Andare Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/15.png" class="img-fluid" alt="Freud Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              
+              <div class="card">
+                <img src="assets/imgs/movies/2.png" class="img-fluid" alt="AfterLyfe Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">              
+              <div class="card">
+                <img src="assets/imgs/movies/5.png" class="img-fluid" alt="Summer Time Cover">
+              </div>
+            </div> 
+            <div class="col-6 col-md-2">
+              <img src="assets/imgs/movies/7.png" class="img-fluid" alt="L'altra Grace Cover">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+
+    <!--Third Carousel-->
+    <div class="carousel-trans">
+    
+    <h5>New Releases</h5>
+    <div id="carouselExample2" class="carousel slide">
+      <div class="carousel-inner overflow-visible">
+        <div class="carousel-item active ">
+          <div class="row gx-1 ">
+            <div class="col-6 col-md-2">             
+              <div class="card">
+                <img src="assets/imgs/movies/13.png" class="img-fluid" alt="Collateral Beauty Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">              
+              <div class="card">
+                <img src="assets/imgs/movies/14.png" class="img-fluid" alt="Self-Made Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">             
+              <div class="card">
+                <img src="assets/imgs/movies/15.png" class="img-fluid" alt="Freud Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">              
+              <div class="card">
+                <img src="assets/imgs/movies/16.png" class="img-fluid" alt="Grace and Frankie Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/17.png" class="img-fluid" alt="Lasciati Andare Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/18.png" class="img-fluid" alt="Dogman Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <img src="assets/imgs/movies/2.png" class="img-fluid" alt="AfterLyfe Cover">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item overflow-visible">
+          <div class="row gx-1 ">
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/2.png" class="img-fluid" alt="AfterLyfe Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/3.png" class="img-fluid" alt="VisAVis Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">             
+              <div class="card">
+                <img src="assets/imgs/movies/7.png" class="img-fluid" alt="L'Altra Grace Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">
+              <div class="card">
+                <img src="assets/imgs/movies/9.png" class="img-fluid" alt="The English Game Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">             
+              <div class="card">
+                <img src="assets/imgs/movies/11.png" class="img-fluid" alt="Patto d'amore Cover">
+              </div>
+            </div>
+            <div class="col-6 col-md-2">              
+              <div class="card">
+                <img src="assets/imgs/movies/6.png" class="img-fluid" alt="I delitti di Valhalla Cover">
+              </div>
+            </div>  
+            <div class="col-6 col-md-2">
+              <img src="assets/imgs/movies/13.png" class="img-fluid" alt="Cover">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+
+        <!--Fourth Carousel-->
+
+    <div class="carousel-trans">
+   
+      <h5>Trending Now</h5>
+       
+      <!--Carosello di bootstrap-->
+      <div id="carouselExample3" class="carousel slide">
+        <div class="carousel-inner overflow-visible">
+          <div class="carousel-item active">
+       <!--div row - col con 6+mezza card con schermo grande e 2 card con mobile-->
+            <div class="row gx-1 ">
+              <div class="col-6 col-md-2">
+                <!--La card si ingrandirà quando passo il mouse sopra-->
+                <div class="card">
+                  <img src="assets/imgs/movies/1.png" class="img-fluid" alt="Unorthodox Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/2.png" class="img-fluid" alt="AfterLyfe Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">   
+                <div class="card">
+                  <img src="assets/imgs/movies/3.png" class="img-fluid" alt="VisAVis Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                
+                <div class="card">
+                  <img src="assets/imgs/movies/4.png" class="img-fluid" alt="The Place Cover">               
+                </div>
+              </div>
+              <div class="col-6 col-md-2">             
+                <div class="card">
+                  <img src="assets/imgs/movies/5.png" class="img-fluid" alt="Summer Time Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">             
+                <div class="card">
+                  <img src="assets/imgs/movies/6.png" class="img-fluid" alt="I delitti di Valhalla Cover">                
+                </div>
+              </div>  
+              <div class="col-6 col-md-2">
+                <!--Questa è l'immagine a metà, quindi non serve che sia una card-->
+                <img src="assets/imgs/movies/7.png" class="img-fluid" alt="Collateral Beauty Cover">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row gx-1 ">
+              <div class="col-6 col-md-2">              
+                <div class="card">
+                  <img src="assets/imgs/movies/7.png" class="img-fluid" alt="Collateral Beauty Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">             
+                <div class="card">
+                  <img src="assets/imgs/movies/11.png" class="img-fluid" alt="Patto d'amore Cover">                
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/17.png" class="img-fluid" alt="Lasciati Andare Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">              
+                <div class="card">
+                  <img src="assets/imgs/movies/15.png" class="img-fluid" alt="Freud Cover">               
+                </div>
+              </div>
+              <div class="col-6 col-md-2">              
+                <div class="card">
+                  <img src="assets/imgs/movies/9.png" class="img-fluid" alt="The English Game Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">              
+                <div class="card">
+                  <img src="assets/imgs/movies/13.png" class="img-fluid" alt="Collateral Beauty Cover">
+                </div>
+              </div> 
+              <div class="col-6 col-md-2">
+                <img src="assets/imgs/movies/1.png" class="img-fluid" alt="Unorthodox Cover">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+      
+      
+    <!--Fifth Carosel-->
+    <div class="carousel-trans">
+          
+      <h5>Watch It Again</h5>
+      <div id="carouselExample4" class="carousel slide">
+        <div class="carousel-inner overflow-visible">
+          <div class="carousel-item active">
+            <div class="row gx-1 ">
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/7.png" class="img-fluid" alt="L'Altra Grace Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/8.png" class="img-fluid" alt="Virgin River Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">              
+                <div class="card">
+                  <img src="assets/imgs/movies/9.png" class="img-fluid" alt="The English Game Cover">
+                </div>         
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/10.png" class="img-fluid" alt="Il metodo Kominsky Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/11.png" class="img-fluid" alt="Patto d'amore Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/12.png" class="img-fluid" alt="La casa de las Flores Cover">
+                </div>
+              </div>  
+              <div class="col-6 col-md-2">
+                <img src="assets/imgs/movies/13.png" class="img-fluid" alt="Collateral Beauty Cover">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row gx-1 ">
+              <div class="col-6 col-md-2">  
+                <div class="card">
+                  <img src="assets/imgs/movies/13.png" class="img-fluid" alt="Collateral Beauty Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">             
+                <div class="card">
+                  <img src="assets/imgs/movies/4.png" class="img-fluid" alt="The Place Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">       
+                <div class="card">
+                  <img src="assets/imgs/movies/17.png" class="img-fluid" alt="Lasciati Andare Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/15.png" class="img-fluid" alt="Freud Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">               
+                <div class="card">
+                  <img src="assets/imgs/movies/2.png" class="img-fluid" alt="AfterLyfe Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">              
+                <div class="card">
+                  <img src="assets/imgs/movies/5.png" class="img-fluid" alt="Summer Time Cover">
+                </div>
+              </div> 
+              <div class="col-6 col-md-2">
+                <img src="assets/imgs/movies/7.png" class="img-fluid" alt="L'altra Grace Cover">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+      
+    <!--Sixth Carousel-->
+    <div class="carousel-trans">
+          
+      <h5>New Releases</h5>     
+      <div id="carouselExample5" class="carousel slide">
+        <div class="carousel-inner overflow-visible">
+          <div class="carousel-item active ">
+            <div class="row gx-1 ">
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/13.png" class="img-fluid" alt="Collateral Beauty Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">              
+                <div class="card">
+                  <img src="assets/imgs/movies/14.png" class="img-fluid" alt="Self-Made Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">               
+                <div class="card">
+                  <img src="assets/imgs/movies/15.png" class="img-fluid" alt="Freud Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">              
+                <div class="card">
+                  <img src="assets/imgs/movies/16.png" class="img-fluid" alt="Grace and Frankie Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/17.png" class="img-fluid" alt="Lasciati Andare Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/18.png" class="img-fluid" alt="Dogman Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <img src="assets/imgs/movies/2.png" class="img-fluid" alt="AfterLyfe Cover">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item overflow-visible">
+            <div class="row gx-1 ">
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/2.png" class="img-fluid" alt="AfterLyfe Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/3.png" class="img-fluid" alt="VisAVis Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                
+                <div class="card">
+                  <img src="assets/imgs/movies/7.png" class="img-fluid" alt="L'Altra Grace Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="card">
+                  <img src="assets/imgs/movies/9.png" class="img-fluid" alt="The English Game Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">             
+                <div class="card">
+                  <img src="assets/imgs/movies/11.png" class="img-fluid" alt="Patto d'amore Cover">
+                </div>
+              </div>
+              <div class="col-6 col-md-2">              
+                <div class="card">
+                  <img src="assets/imgs/movies/6.png" class="img-fluid" alt="I delitti di Valhalla Cover">
+                </div>
+              </div>  
+              <div class="col-6 col-md-2">
+                <img src="assets/imgs/movies/13.png" class="img-fluid" alt="Cover">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+  </main> 
+  
+  
+  <!--Footer ho fatto una impostazione css + row/col di Bootstrap per renderlo responsive-->
+  <footer id="footer">
+    <div class="social">
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
+    <div class="row">
+      <div class="col-6 col-md-3 d-flex flex-column">
+        <a class="link-f" href="#">Audio and Subtitles</a>
+        <a class="link-f" href="#">Media Center</a>
+        <a class="link-f" href="#">Privacy</a>
+        <a class="link-f" href="#">Contact Us</a>
+      </div>
+      <div class="col-6 col-md-3 d-flex flex-column">
+        <a class="link-f" href="#">Audio Description</a>
+        <a class="link-f" href="#">Investor Relations</a>
+        <a class="link-f" href="#">Legal Notices</a>
+      </div>
+      <div class="col-6 col-md-3 d-flex flex-column ">
+        <a class="link-f" href="#">Help Canter</a>
+        <a class="link-f" href="#">Jobs</a>
+        <a class="link-f" href="#">Cookie Preferences</a>
+      </div>
+      <div class="col-6 col-md-3 d-flex flex-column">
+        <a class="link-f" href="#">Gift Cards</a>
+        <a class="link-f" href="#">Terms of Use</a>
+        <a class="link-f" href="#">Coporate Infomation</a>
+      </div>
+    </div>
+    <button class="button-end" type="button">Service Code</button>
+    <div id="last-row">© 1997-2019 Netflix, Inc. {i-Od00fcda2fdf9cOde}</div>
+
+  </footer>
+
+  <script src="https://kit.fontawesome.com/eefe67ed94.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
